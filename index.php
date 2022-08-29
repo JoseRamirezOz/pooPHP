@@ -1,20 +1,9 @@
 <?php
-    class User{
-        public $type; # Variable publica
-    }
-
-   
-    class Admin{
-        public function greet(){ #Funcion publica
-            return "Hola Administrador";
-        }
-    }
+    include "person.php";
+    include "user.php";
+    include "admin.php";
 
     $user = new User;
-    $user -> type = new Admin;
-    
-    echo $user -> type -> greet();
-
-
-
+    $user-> type = new Admin;
+    echo $user->type->greet();
 ?>
